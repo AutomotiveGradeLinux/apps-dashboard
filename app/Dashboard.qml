@@ -33,7 +33,7 @@ ApplicationWindow {
     }
 
     property double vehicleSpeed: 0
-    property double engineSpeed: 0
+    property int engineSpeed: 0
     property bool mphDisplay: false
 
     Component.onCompleted : {
@@ -74,8 +74,8 @@ ApplicationWindow {
                 else
                     vehicleSpeed = parseFloat(value)
             } else if (path === "Vehicle.Powertrain.CombustionEngine.Speed") {
-                engineSpeed = parseFloat(value)
-                tachometer.value = engineSpeed / 7000
+                engineSpeed = parseInt(value)
+                tachometer.value = engineSpeed / 7000.0
             } else if (path === "Vehicle.Cabin.Infotainment.HMI.DistanceUnit") {
                 if (value === "km") {
                     mphDisplay = false
