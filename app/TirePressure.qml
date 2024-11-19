@@ -31,7 +31,7 @@ Image {
             when: !mirror
             PropertyChanges {
                 target: root
-                source: './images/HMI_Dashboard_LeftTire.svg'
+                source: 'qrc:/images/HMI_Dashboard_LeftTire.svg'
             }
             AnchorChanges {
                 target: title
@@ -47,7 +47,7 @@ Image {
             when: mirror
             PropertyChanges {
                 target: root
-                source: './images/HMI_Dashboard_RightTire.svg'
+                source: 'qrc:/images/HMI_Dashboard_RightTire.svg'
             }
             AnchorChanges {
                 target: title

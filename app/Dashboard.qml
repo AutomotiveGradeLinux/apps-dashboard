@@ -118,7 +118,7 @@ ApplicationWindow {
     Image {
         id: car
         anchors.centerIn: parent
-        source: './images/HMI_Dashboard_Car.png'
+        source: 'qrc:/images/HMI_Dashboard_Car.png'
     }
 
     TirePressure {
@@ -167,7 +167,7 @@ ApplicationWindow {
 
         Image {
             id: speedIcon
-            source: './images/HMI_Dashboard_Speed_Icon.svg'
+            source: 'qrc:/images/HMI_Dashboard_Speed_Icon.svg'
         }
         ProgressBar {
             id: tachometer
@@ -187,7 +187,7 @@ ApplicationWindow {
         }
         Image {
             id: fuelIcon
-            source: './images/HMI_Dashboard_Fuel_Icon.svg'
+            source: 'qrc:/images/HMI_Dashboard_Fuel_Icon.svg'
         }
         ProgressBar {
             Layout.fillWidth: true
@@ -196,7 +196,7 @@ ApplicationWindow {
                 anchors.left: parent.left
                 anchors.leftMargin: -40
                 anchors.bottom: parent.top
-                source: './images/HMI_Dashboard_Fuel_Details.svg'
+                source: 'qrc:/images/HMI_Dashboard_Fuel_Details.svg'
                 GridLayout {
                     anchors.fill: parent
                     columns: 2
